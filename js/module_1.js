@@ -499,3 +499,123 @@
 //       }
 //    }
 // }
+
+//! -----------------------Практика суббота 02.09.23 -----------------------------------
+//? Task #1
+//* Проверить есть ли скидка. Скидка доступна студентам или пенсионерам
+//* или в возрасте от 12 до 18 включительно
+
+// const age = 65;
+// const isStudent = false;
+// const isPensioner = true;
+
+// let hasDiscount = false;
+
+// if (isStudent || isPensioner || ((age >= 12) && (age <= 18))) {
+//     hasDiscount = true;
+// }
+
+// console.log(hasDiscount);
+
+//-------------------
+//? Task #2
+//* Проверить возможно ли получение прав. Можно получить если исполнилось 18 лет
+//* и есть право на работу
+
+// const age = 20;
+// const hasWorkPermit = false;
+
+// let canGetDriverLicense = false;
+
+// if (hasWorkPermit && age >= 18) {
+//     canGetDriverLicense = true;
+// }
+
+// console.log(canGetDriverLicense);
+
+//-------------------
+//? Task #3
+//* Проверить является ли введенное пользователем значение числом, если да, вывести его квадрат.
+//* Если нет, сообщить о неправильном вводе. Ввод с помощью prompt()
+
+//* --------мой вариант
+// const a = prompt("Введіть будь ласка число: ");
+// console.log(a);
+
+// if (Number(a)) {
+//     const square = a*a;
+//     console.log(square);
+// }
+// else {
+//     console.log("Error");
+// }
+
+//* -------- вариант урока
+// let userValue = Number(prompt("Введіть будь ласка число: "));
+
+// if (isNaN(userValue)) {
+//     console.log("Error");
+// }
+// else {
+//     let squareNumber = Math.pow(userValue, 2);
+//     console.log(`Ваше число ${userValue} в квадраті дорівнює ${squareNumber}`);
+// }
+
+//-------------------
+//? Task #4
+//* Проверить является ли введенное значение строкой и не содержит символ $.
+//* Если это так, вывести количество символов в строке.
+//* Если нет, сообщить о неправильном вводе. Ввод с помощью prompt()
+
+// let userString = prompt("Введіть будь ласка строку без символа $: ");
+
+// if ((typeof userString === "string") && !userString.includes("$")) {
+//     console.log(userString.length);
+// }
+// else {
+//     console.log("Error");
+// }
+
+//-------------------
+//? Task #5
+//* Проверить с помощью тернарного оператора является ли введенное число четным.
+//* Вывести сообщение с помощью alert(). Ввод с помощью prompt()
+
+// let userValue = Number(prompt("Введіть будь ласка число: "));
+// userValue % 2 === 0 ? alert("Парне число") : alert("Непарне число");
+
+//-------------------
+//? Task #6
+//* Еапишіть цикл for для виводу в консоль всіх парних чисел
+//* від min до max включно по зменшенню
+
+// const max = 56;
+// const min = 23;
+
+// for (let i = max; i >= min; i -= 1) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//     }
+// }
+
+//-------------------
+//? Task #7
+//* За допомогою циклу for знайти суму всіх парних чисел від min до max включно
+
+// const max = 10;
+// const min = 0;
+// let arr = [];
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 !== 0) continue;
+//     else {
+//         arr.push(i);
+//         total += i;
+//     }
+// }
+
+// console.log(arr);
+// console.log(total);
+
+//! 1:28:44
